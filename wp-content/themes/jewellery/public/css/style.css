@@ -1,0 +1,158 @@
+@font-face {
+	font-family: 'Marcellus';
+	src: url('../../assets/font/Marcellus/Marcellus-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('../../assets/font/lora/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Lora-Italic';
+	src: url('../../assets/font/lora/Lora-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+	/* color */
+	--BLACK: #000000;
+	--WHITE: #FFFFFF;
+	--GOLD: #C3935B;
+	--DARK: #242424;
+	--DARK-LIGHT: #777777;
+	--GREY: #DFDFDF;
+	--FOOTER-COLOR: #EAEAEA;
+
+	/* size */
+	--S-14: 14px;
+	--S-22: 22px;
+	--S-30: 30px;
+	--S-45: 45px;
+	--S-54: 54px;
+	--S-62: 62px;
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lora';
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Marcellus';
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.container-wrapper {
+	width: 100%;
+}
+
+.container {
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/* ________header */
+.header-wrapp {
+	height: 750px;
+}
+
+.header-wrapp .container {
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	height: 100%;
+	color: var(--WHITE);
+}
+
+.header-wrapp .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.header_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 470px;
+}
+
+.header_content h1 {
+	font-size: var(--S-54);
+	line-height: calc(var(--S-54) *1.1);
+	margin-bottom: 10px;
+}
+
+.additional_header {
+	font-family: 'Lora-Italic';
+	font-size: var(--S-22);
+	line-height: calc(var(--S-22) *1.1);
+	margin-bottom: 10px;
+}
+
+.banner_text_header {
+	font-size: var(--S-14);
+	line-height: calc(var(--S-14) *1.8);
+	margin-bottom: 35px;
+}
+
+.button {
+	min-width: 113px;
+	height: 45px;
+	padding: 10px 15px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: var(--S-14);
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 500ms ease;
+}
+
+.button_wrapp {
+	display: flex;
+}
+
+.header_content .button {
+	border: 1px solid var(--WHITE);
+}
+
+.header_content .button:hover {
+	background-color: var(--WHITE);
+	color: var(--BLACK);
+}
+
+.header_content .button:first-child {
+	background-color: var(--WHITE);
+	color: var(--BLACK);
+}
+
+.header_content .button:first-child:hover {
+	background-color: var(--BLACK);
+	color: var(--WHITE);
+}
+
+
+
+@media (max-width: 1000px) {}
+
+@media (max-width: 600px) {}

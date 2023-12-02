@@ -1,0 +1,28 @@
+:root {
+	--S-16: 16px;
+	--S-18: 18px;
+}
+
+img {
+	object-fit: contain;
+	width: 100%;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+.page_row {
+	display: grid;
+	grid-template-columns: 100px 300px;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+#wpfooter[role="contentinfo"] {
+	display: none;
+}
+
+input#banner_image {
+	visibility: hidden;
+}
