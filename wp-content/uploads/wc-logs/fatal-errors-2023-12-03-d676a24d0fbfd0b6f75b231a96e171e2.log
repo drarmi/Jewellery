@@ -10,3 +10,133 @@ Stack trace:
 #7 {main}
   thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php on line 124
 
+2023-12-03T12:04:45+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:04:47+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:04:48+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:04:48+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:04:49+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:04:50+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:05:36+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:05:54+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:07:05+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:29
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 29
+
+2023-12-03T12:07:21+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:31
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 31
+
+2023-12-03T12:07:43+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:31
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 31
+
+2023-12-03T12:08:02+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php:31
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php on line 31
+
+2023-12-03T12:17:43+00:00 CRITICAL Uncaught Error: Object of class stdClass could not be converted to string in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\discount.php:24
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(792): require()
+#1 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(725): load_template()
+#2 C:\OSPanel\domains\git\Jewellery\wp-includes\general-template.php(206): locate_template()
+#3 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php(30): get_template_part()
+#4 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include('C:\\OSPanel\\doma...')
+#5 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#7 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\discount.php on line 24
+
+2023-12-03T12:18:12+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\discount.php:24
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(792): require()
+#1 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(725): load_template()
+#2 C:\OSPanel\domains\git\Jewellery\wp-includes\general-template.php(206): locate_template()
+#3 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php(30): get_template_part()
+#4 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include('C:\\OSPanel\\doma...')
+#5 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#7 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\discount.php on line 24
+
+2023-12-03T17:03:31+00:00 CRITICAL Cannot redeclare get_products_by_category() (previously declared in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:17) in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\special_offer_bottom.php on line 9
+
+2023-12-03T17:04:05+00:00 CRITICAL Cannot redeclare get_products_by_category() (previously declared in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:17) in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\special_offer_bottom.php on line 9
+
+2023-12-03T17:04:23+00:00 CRITICAL Cannot redeclare get_products_by_category() (previously declared in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:17) in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\special_offer_bottom.php on line 9
+
+2023-12-03T17:04:53+00:00 CRITICAL Cannot redeclare get_products_by_category() (previously declared in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:17) in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\special_offer_bottom.php on line 11
+
+2023-12-03T17:06:00+00:00 CRITICAL Cannot redeclare get_products_by_category() (previously declared in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:17) in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\special_offer_bottom.php on line 11
+

@@ -35,6 +35,8 @@ input#banner_image {
 	margin-bottom: 15px;
 }
 
-.image-upload-field {
+.image-upload-field,
+#custom_image_url,
+#logo_foote {
 	visibility: hidden;
 }

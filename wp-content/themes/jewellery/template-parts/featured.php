@@ -14,7 +14,7 @@ $category_url_2 = $category2 ? get_term_link($category2, 'product_cat') : "";
 $image_1 = get_post_meta($post->ID, '_image_id1', true) ?? "";
 $image_2 = get_post_meta($post->ID, '_image_id2', true) ?? "";
 
-function get_products_by_category($id_category)
+function get_products_by_category($id_category, $number)
 {
 	$args = array(
 		'post_type'      => 'product',
@@ -31,9 +31,10 @@ function get_products_by_category($id_category)
 	$data = array();
 
 	$query = new WP_Query($args);
-
+	$count = 0;
 	if ($query->have_posts()) {
-		while ($query->have_posts()) {
+		while ($query->have_posts() && $count <= $number) {
+			$count += 1;
 			$query->the_post();
 
 			$product = wc_get_product(get_the_ID());
@@ -65,82 +66,84 @@ function get_products_by_category($id_category)
 	return $data;
 }
 
-$slide1 = get_products_by_category($id_category1);
-$slide2 = get_products_by_category($id_category2);
+$slide1 = get_products_by_category($id_category1, $featured_number1);
+$slide2 = get_products_by_category($id_category2, $featured_number2);
 
 ?>
-<div class="container-wrapper">
-	<div class="container featured">
-		<p><?= __("Adipisicing elit"); ?></p>
-		<h4><?= __("FEATURED PRODUCTS"); ?></h4>
-		<p><?= __("There are many variations of passages of lorem ipsum available."); ?></p>
+<section>
+	<div class="container-wrapper">
+		<div class="container featured">
+			<p class='section_italic_gold'><?= __("Adipisicing elit"); ?></p>
+			<h4><?= __("FEATURED PRODUCTS"); ?></h4>
+			<p><?= __("There are many variations of passages of lorem ipsum available."); ?></p>
 
-		<div class="slide_wrapper_top">
-			<a href="<?= $category_url_1 ?>" class="row_category_img" style="background: url(<?= $image_1; ?>);">
-				<p><?= $category1 ? $category1->name : ""; ?></p>
-				<p><?= $category1 ? $category1->description : ""; ?></p>
-			</a>
-			<div>
-				<div class="slider1 slider_slick">
-					<?php if ($slide1 && is_array($slide1)) {
-						foreach ($slide1 as $item) { ?>
-							<a href="<?= $item["url"] ?>">
-								<img src="<?= $item["thumbnail"] ?>" alt="<?= $product_title ?>" loading="lazy" width="250" height="270">
-								<h5><?= $item["title"] ?></h5>
-								<p class="slide_category"><?= $item["category"] ?></p>
-								<p class="slide_price"><?= $item["price"] ? '$' . $item["price"] : ""; ?></p>
-							</a>
-					<?php }
-					} ?>
-				</div>
-				<div class="slider1_nav">
-					<span class="prev">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-							<path d="M19.275 9.2625L13.5375 15L19.275 20.7375L17.5 22.5L9.99999 15L17.5 7.5L19.275 9.2625Z" fill="#777777" />
-						</svg>
-					</span>
-					<span class="next">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-							<path d="M10.725 20.7375L16.4625 15L10.725 9.2625L12.5 7.5L20 15L12.5 22.5L10.725 20.7375Z" fill="#777777" />
-						</svg>
-					</span>
+			<div class="slide_wrapper_top">
+				<a href="<?= $category_url_1 ?>" class="row_category_img" style="background: url(<?= $image_1; ?>);">
+					<p><?= $category1 ? $category1->name : ""; ?></p>
+					<p><?= $category1 ? $category1->description : ""; ?></p>
+				</a>
+				<div>
+					<div class="slider1 slider_slick">
+						<?php if ($slide1 && is_array($slide1)) {
+							foreach ($slide1 as $item) { ?>
+								<a href="<?= $item["url"] ?>">
+									<img src="<?= $item["thumbnail"] ?>" alt="<?= $item["title"] ?>" loading="lazy" width="250" height="270">
+									<h5><?= $item["title"] ?></h5>
+									<p class="slide_category"><?= $item["category"] ?></p>
+									<p class="slide_price"><?= $item["price"] ? '$' . $item["price"] : ""; ?></p>
+								</a>
+						<?php }
+						} ?>
+					</div>
+					<div class="slider1_nav">
+						<span class="prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+								<path d="M19.275 9.2625L13.5375 15L19.275 20.7375L17.5 22.5L9.99999 15L17.5 7.5L19.275 9.2625Z" fill="#777777" />
+							</svg>
+						</span>
+						<span class="next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+								<path d="M10.725 20.7375L16.4625 15L10.725 9.2625L12.5 7.5L20 15L12.5 22.5L10.725 20.7375Z" fill="#777777" />
+							</svg>
+						</span>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="slide_wrapper_bottom">
-			<a href="<?= $category_url_2 ?>" class="row_category_img bottom" style="background: url(<?= $image_2; ?>);">
-				<p><?= $category2 ? $category2->name : ""; ?></p>
-				<p><?= $category2 ? $category2->description : ""; ?></p>
-			</a>
-			<div>
-				<div class="slider2 slider_slick">
-					<?php if ($slide2 && is_array($slide2)) {
-						foreach ($slide2 as $item) { ?>
-							<a href="<?= $item["url"] ?>">
-								<img src="<?= $item["thumbnail"] ?>" alt="<?= $product_title ?>" loading="lazy" width="250" height="270">
-								<h5><?= $item["title"] ?></h5>
-								<p class="slide_category"><?= $item["category"] ?></p>
-								<p class="slide_price"><?= $item["price"] ? '$' . $item["price"] : ""; ?></p>
-							</a>
-					<?php }
-					} ?>
-				</div>
-				<div class="slider2_nav">
-					<span class="prev">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-							<path d="M19.275 9.2625L13.5375 15L19.275 20.7375L17.5 22.5L9.99999 15L17.5 7.5L19.275 9.2625Z" fill="#777777" />
-						</svg>
-					</span>
-					<span class="next">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-							<path d="M10.725 20.7375L16.4625 15L10.725 9.2625L12.5 7.5L20 15L12.5 22.5L10.725 20.7375Z" fill="#777777" />
-						</svg>
-					</span>
+			<div class="slide_wrapper_bottom">
+				<a href="<?= $category_url_2 ?>" class="row_category_img bottom" style="background: url(<?= $image_2; ?>);">
+					<p><?= $category2 ? $category2->name : ""; ?></p>
+					<p><?= $category2 ? $category2->description : ""; ?></p>
+				</a>
+				<div>
+					<div class="slider2 slider_slick">
+						<?php if ($slide2 && is_array($slide2)) {
+							foreach ($slide2 as $item) { ?>
+								<a href="<?= $item["url"] ?>">
+									<img src="<?= $item["thumbnail"] ?>" alt="<?= $item["title"] ?>" loading="lazy" width="250" height="270">
+									<h5><?= $item["title"] ?></h5>
+									<p class="slide_category"><?= $item["category"] ?></p>
+									<p class="slide_price"><?= $item["price"] ? '$' . $item["price"] : ""; ?></p>
+								</a>
+						<?php }
+						} ?>
+					</div>
+					<div class="slider2_nav">
+						<span class="prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+								<path d="M19.275 9.2625L13.5375 15L19.275 20.7375L17.5 22.5L9.99999 15L17.5 7.5L19.275 9.2625Z" fill="#777777" />
+							</svg>
+						</span>
+						<span class="next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+								<path d="M10.725 20.7375L16.4625 15L10.725 9.2625L12.5 7.5L20 15L12.5 22.5L10.725 20.7375Z" fill="#777777" />
+							</svg>
+						</span>
+					</div>
 				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
-</div>
+</section>
 <?php

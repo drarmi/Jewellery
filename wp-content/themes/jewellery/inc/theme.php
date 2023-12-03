@@ -16,14 +16,3 @@ function custom_theme_init()
 }
 add_action('after_setup_theme', 'custom_theme_init', 0);
 
-
-if (function_exists('acf_add_options_page') && function_exists('acf_add_options_sub_page')) {
-	acf_add_options_page(array(
-		'page_title' => esc_html__('Theme options', 'custom'),
-		'menu_title' => esc_html__('Theme options', 'custom'),
-		'menu_slug' => 'theme-general',
-		'capability' => 'edit_posts',
-		'redirect' => false,
-		'post_id' => "theme-general",
-	));
-}
