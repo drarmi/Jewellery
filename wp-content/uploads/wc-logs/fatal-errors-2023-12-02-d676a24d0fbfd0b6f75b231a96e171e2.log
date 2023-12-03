@@ -1,0 +1,29 @@
+2023-12-02T16:27:43+00:00 CRITICAL Out of memory (allocated 54525952) (tried to allocate 8192 bytes) in C:\OSPanel\domains\git\Jewellery\wp-content\plugins\advanced-custom-fields-pro\pro\fields\class-acf-field-flexible-content.php on line 1721
+
+2023-12-02T22:17:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in C:\OSPanel\domains\git\Jewellery\wp-content\plugins\woocommerce\includes\wc-product-functions.php:1125
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php(41): wc_get_price_to_display()
+#1 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php(62): get_products_by_category()
+#2 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(792): require('C:\\OSPanel\\doma...')
+#3 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(725): load_template()
+#4 C:\OSPanel\domains\git\Jewellery\wp-includes\general-template.php(206): locate_template()
+#5 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php(9): get_template_part()
+#6 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#8 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#9 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 1125
+
+2023-12-02T22:20:26+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php:41
+Stack trace:
+#0 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php(62): get_products_by_category()
+#1 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(792): require('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\git\Jewellery\wp-includes\template.php(725): load_template()
+#3 C:\OSPanel\domains\git\Jewellery\wp-includes\general-template.php(206): locate_template()
+#4 C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\front-page.php(9): get_template_part()
+#5 C:\OSPanel\domains\git\Jewellery\wp-includes\template-loader.php(106): include('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\git\Jewellery\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\git\Jewellery\index.php(17): require('C:\\OSPanel\\doma...')
+#8 {main}
+  thrown in C:\OSPanel\domains\git\Jewellery\wp-content\themes\jewellery\template-parts\featured.php on line 41
+

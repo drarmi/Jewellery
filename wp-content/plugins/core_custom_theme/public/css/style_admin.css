@@ -4,8 +4,10 @@
 }
 
 img {
-	object-fit: contain;
+	object-fit: cover;
 	width: 100%;
+	height: 200px;
+	object-position: center;
 }
 
 textarea {
@@ -24,5 +26,15 @@ textarea {
 }
 
 input#banner_image {
+	visibility: hidden;
+}
+
+.row_meta_featured>div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 15px;
+}
+
+.image-upload-field {
 	visibility: hidden;
 }
